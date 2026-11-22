@@ -1,0 +1,21 @@
+services:
+  vimbat:
+    container_name: vimbat
+    image: vimbat
+    volumes:
+      - vimbat:/vimbat
+    pull_policy: never
+    build:
+      context: ./requirements/vimbat
+    stdin_open: true
+    tty: true
+    restart: no
+
+volumes:
+  vimbat:
+    name: vimbat
+    driver: local
+    driver_opts:
+      type: "none"
+      o: "bind"
+      device: "./"
