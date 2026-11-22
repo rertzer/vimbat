@@ -1,6 +1,7 @@
 # vimbat
 Neovim in a Docker
 
+Nerd Fonts needs to be installed in your terminal.
 
 ## Usage
 ```sh
